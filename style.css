@@ -1,48 +1,74 @@
-/* ===== AYDH Manpower Corporate Website CSS ===== */
+/* ===== AYDH Manpower Premium CSS ===== */
 
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Poppins', Arial, sans-serif;
+    font-family:'Segoe UI', Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
-    background:#f4f7fb;
+    background:#f5f8fc;
     color:#333;
 }
 
 
-/* ===== Navigation ===== */
+/* ===== Header ===== */
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+}
+
 
 nav{
-    background:#0b1f3a;
-    padding:18px 8%;
+    background:rgba(8,31,61,0.95);
     display:flex;
     justify-content:space-between;
     align-items:center;
+    padding:18px 8%;
 }
 
+
 nav h1{
-    color:white;
+    color:#fff;
     font-size:30px;
+    font-weight:700;
 }
+
 
 nav a{
     color:white;
     text-decoration:none;
     margin-left:25px;
     font-size:16px;
+    transition:.3s;
 }
 
 
-/* ===== Hero Banner ===== */
+nav a:hover{
+    color:#ff9800;
+}
+
+
+
+/* ===== Hero Section ===== */
 
 .hero{
 
-    height:550px;
+    min-height:100vh;
+
     background:
-    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    linear-gradient(
+    rgba(0,0,0,.55),
+    rgba(0,0,0,.55)
+    ),
     url("images/manpower.jpg");
 
     background-size:cover;
@@ -50,96 +76,153 @@ nav a{
 
     display:flex;
     align-items:center;
+
     padding:0 8%;
+
     color:white;
+
 }
 
 
 .hero h2{
 
-    font-size:50px;
-    max-width:700px;
+    font-size:55px;
+    max-width:750px;
+    line-height:1.2;
+
 }
 
 
 .hero p{
 
-    font-size:20px;
-    margin:20px 0;
+    font-size:21px;
+    margin:25px 0;
+    max-width:650px;
+
 }
 
 
-/* ===== Buttons ===== */
+
+/* ===== Button ===== */
 
 .btn{
 
-    background:#ff9800;
-    color:white;
-    padding:14px 30px;
-    border-radius:30px;
-    text-decoration:none;
     display:inline-block;
+
+    background:
+    linear-gradient(45deg,#ff9800,#ff5722);
+
+    color:white;
+
+    padding:14px 35px;
+
+    border-radius:40px;
+
+    border:none;
+
+    text-decoration:none;
+
+    font-size:17px;
+
     font-weight:bold;
+
+    cursor:pointer;
+
     transition:.3s;
+
 }
 
 
 .btn:hover{
 
-    background:#e65100;
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.3);
+
 }
 
 
-/* ===== Sections ===== */
+
+
+
+/* ===== Common Section ===== */
+
 
 .section{
 
-    padding:60px 8%;
+    padding:80px 8%;
+
     text-align:center;
+
 }
 
 
 .section h2{
 
-    font-size:36px;
     color:#0b1f3a;
-    margin-bottom:30px;
+
+    font-size:38px;
+
+    margin-bottom:25px;
 
 }
 
 
-/* ===== Services Cards ===== */
+.section p{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+
+
+
+/* ===== Services ===== */
 
 
 .services{
 
     display:flex;
-    gap:25px;
+
     justify-content:center;
+
+    gap:30px;
+
     flex-wrap:wrap;
 
+    margin-top:40px;
+
 }
+
 
 
 .card{
 
     background:white;
-    width:300px;
-    padding:30px;
 
-    border-radius:15px;
+    width:320px;
+
+    padding:35px 25px;
+
+    border-radius:20px;
 
     box-shadow:
-    0 10px 25px rgba(0,0,0,.12);
+    0 10px 30px rgba(0,0,0,.12);
 
-    transition:.3s;
+    transition:.4s;
 
 }
 
 
+
 .card:hover{
 
-    transform:translateY(-10px);
+    transform:translateY(-12px);
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.25);
 
 }
 
@@ -147,9 +230,14 @@ nav a{
 .card h3{
 
     color:#1565c0;
+
+    font-size:25px;
+
     margin-bottom:15px;
 
 }
+
+
 
 
 /* ===== Recruitment Banner ===== */
@@ -157,54 +245,73 @@ nav a{
 
 .recruitment{
 
-background:
-linear-gradient(135deg,#1565c0,#0b1f3a);
+    background:
+    linear-gradient(135deg,#0b1f3a,#1565c0);
 
-color:white;
+    color:white;
 
-padding:50px;
+    padding:70px 10%;
 
-text-align:center;
+    text-align:center;
 
 }
 
 
-/* ===== Contact Form ===== */
+.recruitment h2{
+
+    font-size:40px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+/* ===== Contact ===== */
 
 
 .contact{
 
-background:white;
+    max-width:650px;
 
-padding:40px;
+    margin:auto;
 
-border-radius:20px;
+    background:white;
 
-box-shadow:0 10px 25px rgba(0,0,0,.15);
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.15);
 
 }
 
 
-input,textarea{
+input,
+textarea{
 
-width:100%;
+    width:100%;
 
-padding:15px;
+    padding:15px;
 
-margin:10px 0;
+    margin:10px 0;
 
-border:1px solid #ddd;
+    border:1px solid #ddd;
 
-border-radius:8px;
+    border-radius:10px;
+
+    font-size:16px;
 
 }
 
 
 textarea{
 
-height:120px;
+    height:130px;
 
 }
+
 
 
 /* ===== Footer ===== */
@@ -212,40 +319,60 @@ height:120px;
 
 footer{
 
-background:#0b1f3a;
+    background:#081f3d;
 
-color:white;
+    color:white;
 
-text-align:center;
+    text-align:center;
 
-padding:25px;
+    padding:25px;
 
 }
 
 
-/* ===== Mobile ===== */
+
+
+/* ===== Mobile Responsive ===== */
 
 
 @media(max-width:768px){
 
-.hero h2{
-
-font-size:32px;
-
-}
 
 nav{
 
-flex-direction:column;
+    flex-direction:column;
 
 }
+
+
+nav a{
+
+    margin:10px;
+
+}
+
+
+.hero h2{
+
+    font-size:35px;
+
+}
+
 
 .services{
 
-flex-direction:column;
+    flex-direction:column;
 
-align-items:center;
+    align-items:center;
 
 }
+
+
+.card{
+
+    width:90%;
+
+}
+
 
 }
