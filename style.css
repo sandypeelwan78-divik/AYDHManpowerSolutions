@@ -17,14 +17,11 @@ body{
     line-height:1.6;
 }
 
-
 /* ===== Header ===== */
 
 header{
     width:100%;
 }
-
-
 nav{
     background:#081f3d;
     display:flex;
@@ -125,16 +122,10 @@ nav a:hover{
 
 }
 
-
-
 /* ===== Sections ===== */
-
-
 .section{
-
     padding:70px 8%;
     text-align:center;
-
 }
 
 
