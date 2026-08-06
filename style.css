@@ -1,344 +1,226 @@
-/* ===== AYDH Manpower Website CSS ===== */
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Segoe UI', Arial, sans-serif;
+/* ===== Global Style ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
 }
 
-html{
-    scroll-behavior:fixed;
+body {
+    background: #f7f9fc;
+    color: #333;
+    line-height: 1.6;
 }
 
-body{
-    background:#f5f8fc;
-    color:#333;
-    line-height:1.6;
+a {
+    text-decoration: none;
+    color: inherit;
 }
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
 
 /* ===== Header ===== */
 
-header{
-    width:100%;
-}
-nav{
-    background:#081f3d;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 8%;
+header {
+    background: #003366;
+    color: white;
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-nav h1{
-    color:orange;
-    font-size:32px;
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #f4b400;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #f4b400;
 }
 
 
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:30px;
-    font-size:17px;
-}
+/* ===== Hero Section ===== */
 
-
-nav a:hover{
-    color:#ff9800;
-}
-
-
-/* ===== Hero ===== */
-
-.hero{
-
-    min-height:600px;
-
-    background:
-    linear-gradient(
-    rgba(0,0,0,.55),
-    rgba(0,0,0,.55)
+.hero {
+    background: linear-gradient(
+        rgba(0,51,102,0.75),
+        rgba(0,51,102,0.75)
     ),
-    url("images/manpower.jpg");
+    url('images/manpower.jpg');
 
-    background-size:cover;
-    background-position:center;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
 
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
+    color: white;
+}
 
-    padding:80px 8%;
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
 
-    color:orange;
+.hero p {
+    font-size: 20px;
+    max-width: 600px;
+}
 
+.btn {
+    display: inline-block;
+    background: #f4b400;
+    color: #000;
+    padding: 12px 30px;
+    margin-top: 25px;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background: #fff;
 }
 
 
-.hero h2{
+/* ===== Section ===== */
 
-    font-size:52px;
-    max-width:800px;
-    line-height:1.3;
-    margin-bottom:20px;
+section {
+    padding: 70px 0;
+}
 
+.title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.title h2 {
+    font-size: 36px;
+    color:#003366;
 }
 
 
-.hero p{
+/* ===== Services Cards ===== */
 
-    font-size:20px;
-    max-width:650px;
-    margin-bottom:30px;
-    line-height:1.8;
-
+.cards {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
 }
 
-
-/* ===== Button ===== */
-
-.btn{
-
-    display:inline-block;
-    background:#ff9800;
-    color:white;
-
-    padding:14px 35px;
-
-    border-radius:30px;
-
-    text-decoration:none;
-    font-weight:bold;
-
-    transition:.3s;
-
-}
-
-
-.btn:hover{
-
-    background:#e65100;
-
-}
-
-/* ===== Sections ===== */
-.section{
-    padding:70px 8%;
-    text-align:center;
-}
-
-
-.section h2{
-
-    color:#081f3d;
-    font-size:38px;
-    margin-bottom:25px;
-
-}
-
-
-.section p{
-
-    font-size:18px;
-    line-height:1.9;
-
-}
-
-
-
-
-/* ===== Service Cards ===== */
-
-
-.services{
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:30px;
-
-    flex-wrap:wrap;
-
-    margin-top:40px;
-
-}
-
-
-
-.card{
-
+.card {
     background:white;
-
-    width:320px;
-
-    padding:35px;
-
-    border-radius:15px;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.12);
-
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
     transition:.3s;
-
 }
 
-
-
-.card:hover{
-
+.card:hover {
     transform:translateY(-10px);
-
 }
 
-
-
-.card h3{
-
-    color:#1565c0;
-
-    font-size:25px;
-
+.card h3 {
+    color:#003366;
     margin-bottom:15px;
-
 }
 
 
+/* ===== Why Choose Us ===== */
 
-/* ===== Recruitment ===== */
+.features {
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
 
-
-.recruitment{
-
-    background:#1565c0;
-
-    color:white;
-
-    padding:70px 8%;
-
+.feature {
+    background:#fff;
+    padding:25px;
     text-align:center;
-
+    border-radius:10px;
 }
-
-
-.recruitment h2{
-
-    font-size:40px;
-
-    margin-bottom:20px;
-
-}
-
-
 
 
 /* ===== Contact ===== */
 
-
-.contact{
-
-    max-width:650px;
-
-    margin:auto;
-
-    background:white;
-
-    padding:35px;
-
-    border-radius:15px;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
-
+.contact {
+    background:#003366;
+    color:white;
 }
 
-
-
-input,
-textarea{
-
-    width:100%;
-
-    padding:15px;
-
-    margin:10px 0;
-
-    border:1px solid #ddd;
-
-    border-radius:8px;
-
+.contact h2 {
+    color:white;
 }
 
-
-
-textarea{
-
-    height:130px;
-
+.contact-box {
+    display:flex;
+    justify-content:space-between;
+    gap:30px;
 }
-
-
 
 
 /* ===== Footer ===== */
 
-
-footer{
-
-    background:#081f3d;
-
+footer {
+    background:#111;
     color:white;
-
     text-align:center;
-
-    padding:25px;
-
+    padding:20px;
 }
 
 
-
-
-/* ===== Mobile ===== */
-
+/* ===== Mobile Responsive ===== */
 
 @media(max-width:768px){
 
-
-nav{
-
+.navbar{
     flex-direction:column;
-
 }
 
-
-nav a{
-
-    display:inline-block;
-
-    margin:10px;
-
-}
-
-
-.hero h2{
-
-    font-size:34px;
-
-}
-
-
-.services{
-
+nav ul{
     flex-direction:column;
-
-    align-items:center;
-
+    text-align:center;
+    margin-top:15px;
 }
 
+.hero h1{
+    font-size:32px;
+}
 
-.card{
+.cards,
+.features{
+    grid-template-columns:1fr;
+}
 
-    width:90%;
-
+.contact-box{
+    flex-direction:column;
 }
 
 }        
