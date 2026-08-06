@@ -1,7 +1,8 @@
-/* ===== AYDH Manpower Premium CSS ===== */
+/* ===== AYDH Manpower Website CSS ===== */
+
 *{
-    margin:1;
-    padding:1;
+    margin:0;
+    padding:0;
     box-sizing:border-box;
     font-family:'Segoe UI', Arial, sans-serif;
 }
@@ -11,28 +12,21 @@ html{
 }
 
 body{
-    body{
     background:#f5f8fc;
     color:#333;
     line-height:1.6;
-    padding-top:80px;
-}
 }
 
 
 /* ===== Header ===== */
 
 header{
-    position:fixed;
-    top:0;
-    left:0;
     width:100%;
-    height:80px;
-    z-index:1000;
 }
 
+
 nav{
-    background:rgba(8,31,61,0.96);
+    background:#081f3d;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -43,16 +37,14 @@ nav{
 nav h1{
     color:white;
     font-size:32px;
-    letter-spacing:1px;
 }
 
 
 nav a{
     color:white;
     text-decoration:none;
-    margin-left:35px;
+    margin-left:30px;
     font-size:17px;
-    transition:.3s;
 }
 
 
@@ -61,13 +53,11 @@ nav a:hover{
 }
 
 
-
-
-/* ===== Hero Section ===== */
+/* ===== Hero ===== */
 
 .hero{
 
-   min-height:calc(100vh - 80px);
+    min-height:600px;
 
     background:
     linear-gradient(
@@ -82,16 +72,16 @@ nav a:hover{
     display:flex;
     align-items:center;
 
-    padding:50px 8%;
+    padding:80px 8%;
 
     color:white;
-}
 
+}
 
 
 .hero h2{
 
-    font-size:55px;
+    font-size:52px;
     max-width:800px;
     line-height:1.3;
     margin-bottom:20px;
@@ -99,17 +89,14 @@ nav a:hover{
 }
 
 
-
 .hero p{
 
-    font-size:21px;
+    font-size:20px;
     max-width:650px;
+    margin-bottom:30px;
     line-height:1.8;
-    margin-bottom:35px;
 
 }
-
-
 
 
 /* ===== Button ===== */
@@ -117,20 +104,14 @@ nav a:hover{
 .btn{
 
     display:inline-block;
-
-    background:
-    linear-gradient(45deg,#ff9800,#ff5722);
-
+    background:#ff9800;
     color:white;
 
-    padding:15px 40px;
+    padding:14px 35px;
 
-    border-radius:50px;
+    border-radius:30px;
 
     text-decoration:none;
-
-    font-size:17px;
-
     font-weight:bold;
 
     transition:.3s;
@@ -138,60 +119,45 @@ nav a:hover{
 }
 
 
-
 .btn:hover{
 
-    transform:translateY(-5px);
-
-    box-shadow:0 10px 25px rgba(0,0,0,.3);
+    background:#e65100;
 
 }
 
 
 
-
-
-/* ===== Common Section ===== */
+/* ===== Sections ===== */
 
 
 .section{
 
-    padding:90px 8%;
-
+    padding:70px 8%;
     text-align:center;
 
 }
 
 
-
 .section h2{
 
-    color:#0b1f3a;
-
-    font-size:40px;
-
-    margin-bottom:30px;
+    color:#081f3d;
+    font-size:38px;
+    margin-bottom:25px;
 
 }
-
 
 
 .section p{
 
     font-size:18px;
-
-    line-height:2;
-
-    max-width:900px;
-
-    margin:auto;
+    line-height:1.9;
 
 }
 
 
 
 
-/* ===== Services ===== */
+/* ===== Service Cards ===== */
 
 
 .services{
@@ -200,11 +166,11 @@ nav a:hover{
 
     justify-content:center;
 
-    gap:35px;
+    gap:30px;
 
     flex-wrap:wrap;
 
-    margin-top:50px;
+    margin-top:40px;
 
 }
 
@@ -216,14 +182,13 @@ nav a:hover{
 
     width:320px;
 
-    padding:40px 30px;
+    padding:35px;
 
-    border-radius:20px;
+    border-radius:15px;
 
-    box-shadow:
-    0 10px 30px rgba(0,0,0,.12);
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
 
-    transition:.4s;
+    transition:.3s;
 
 }
 
@@ -231,7 +196,7 @@ nav a:hover{
 
 .card:hover{
 
-    transform:translateY(-12px);
+    transform:translateY(-10px);
 
 }
 
@@ -241,58 +206,35 @@ nav a:hover{
 
     color:#1565c0;
 
-    font-size:26px;
+    font-size:25px;
 
-    margin-bottom:20px;
-
-}
-
-
-
-.card p{
-
-    font-size:16px;
-
-    line-height:1.8;
+    margin-bottom:15px;
 
 }
 
 
 
-
-/* ===== Recruitment Banner ===== */
+/* ===== Recruitment ===== */
 
 
 .recruitment{
 
-    background:
-    linear-gradient(135deg,#0b1f3a,#1565c0);
+    background:#1565c0;
 
     color:white;
 
-    padding:80px 10%;
+    padding:70px 8%;
 
     text-align:center;
 
 }
 
 
-
 .recruitment h2{
 
-    font-size:42px;
+    font-size:40px;
 
-    margin-bottom:25px;
-
-}
-
-
-
-.recruitment p{
-
-    font-size:20px;
-
-    line-height:2;
+    margin-bottom:20px;
 
 }
 
@@ -310,12 +252,11 @@ nav a:hover{
 
     background:white;
 
-    padding:40px;
+    padding:35px;
 
-    border-radius:20px;
+    border-radius:15px;
 
-    box-shadow:
-    0 10px 30px rgba(0,0,0,.15);
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
 
 }
 
@@ -326,15 +267,13 @@ textarea{
 
     width:100%;
 
-    padding:16px;
+    padding:15px;
 
-    margin:12px 0;
+    margin:10px 0;
 
     border:1px solid #ddd;
 
-    border-radius:10px;
-
-    font-size:16px;
+    border-radius:8px;
 
 }
 
@@ -342,7 +281,7 @@ textarea{
 
 textarea{
 
-    height:140px;
+    height:130px;
 
 }
 
@@ -360,16 +299,14 @@ footer{
 
     text-align:center;
 
-    padding:30px;
-
-    font-size:16px;
+    padding:25px;
 
 }
 
 
 
 
-/* ===== Mobile Responsive ===== */
+/* ===== Mobile ===== */
 
 
 @media(max-width:768px){
@@ -382,16 +319,11 @@ nav{
 }
 
 
-nav h1{
-
-    margin-bottom:15px;
-
-}
-
-
 nav a{
 
-    margin:8px;
+    display:inline-block;
+
+    margin:10px;
 
 }
 
@@ -399,20 +331,6 @@ nav a{
 .hero h2{
 
     font-size:34px;
-
-}
-
-
-.hero p{
-
-    font-size:18px;
-
-}
-
-
-.section{
-
-    padding:60px 5%;
 
 }
 
@@ -428,8 +346,8 @@ nav a{
 
 .card{
 
-    width:95%;
+    width:90%;
 
 }
 
-}
+}        
