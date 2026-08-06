@@ -1,28 +1,251 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f5f5f5;
+/* ===== AYDH Manpower Corporate Website CSS ===== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', Arial, sans-serif;
 }
 
-header {
-    background: #1e3a8a;
-    color: white;
-    padding: 20px;
-    text-align: center;
+body{
+    background:#f4f7fb;
+    color:#333;
 }
 
-section {
-    padding: 30px;
-    background: white;
-    margin: 20px;
-    border-radius: 10px;
+
+/* ===== Navigation ===== */
+
+nav{
+    background:#0b1f3a;
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
-button {
-    background: #2563eb;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+nav h1{
+    color:white;
+    font-size:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:16px;
+}
+
+
+/* ===== Hero Banner ===== */
+
+.hero{
+
+    height:550px;
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("images/manpower.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+    padding:0 8%;
+    color:white;
+}
+
+
+.hero h2{
+
+    font-size:50px;
+    max-width:700px;
+}
+
+
+.hero p{
+
+    font-size:20px;
+    margin:20px 0;
+}
+
+
+/* ===== Buttons ===== */
+
+.btn{
+
+    background:#ff9800;
+    color:white;
+    padding:14px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    display:inline-block;
+    font-weight:bold;
+    transition:.3s;
+}
+
+
+.btn:hover{
+
+    background:#e65100;
+}
+
+
+/* ===== Sections ===== */
+
+.section{
+
+    padding:60px 8%;
+    text-align:center;
+}
+
+
+.section h2{
+
+    font-size:36px;
+    color:#0b1f3a;
+    margin-bottom:30px;
+
+}
+
+
+/* ===== Services Cards ===== */
+
+
+.services{
+
+    display:flex;
+    gap:25px;
+    justify-content:center;
+    flex-wrap:wrap;
+
+}
+
+
+.card{
+
+    background:white;
+    width:300px;
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.12);
+
+    transition:.3s;
+
+}
+
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+.card h3{
+
+    color:#1565c0;
+    margin-bottom:15px;
+
+}
+
+
+/* ===== Recruitment Banner ===== */
+
+
+.recruitment{
+
+background:
+linear-gradient(135deg,#1565c0,#0b1f3a);
+
+color:white;
+
+padding:50px;
+
+text-align:center;
+
+}
+
+
+/* ===== Contact Form ===== */
+
+
+.contact{
+
+background:white;
+
+padding:40px;
+
+border-radius:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+
+input,textarea{
+
+width:100%;
+
+padding:15px;
+
+margin:10px 0;
+
+border:1px solid #ddd;
+
+border-radius:8px;
+
+}
+
+
+textarea{
+
+height:120px;
+
+}
+
+
+/* ===== Footer ===== */
+
+
+footer{
+
+background:#0b1f3a;
+
+color:white;
+
+text-align:center;
+
+padding:25px;
+
+}
+
+
+/* ===== Mobile ===== */
+
+
+@media(max-width:768px){
+
+.hero h2{
+
+font-size:32px;
+
+}
+
+nav{
+
+flex-direction:column;
+
+}
+
+.services{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
 }
